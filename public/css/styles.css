@@ -1,0 +1,18 @@
+body{
+    background: url("/img/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.center{
+    padding: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.arrondi{
+    border-radius: 100%;
+    border-top-left-radius: 100%;
+}
