@@ -16,3 +16,14 @@ body{
     border-radius: 100%;
     border-top-left-radius: 100%;
 }
+
+.sansBorduretr {
+    border-style:none;
+    border-bottom: 1px #000 solid;
+    background: #f6f6f6;
+}
+
+.sansBordure {
+    border-style:none;
+    background: #f6f6f6;
+}

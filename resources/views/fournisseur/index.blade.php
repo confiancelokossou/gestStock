@@ -8,7 +8,7 @@
         <div class="box-body" >
             <button type="button" class="btn btn-primary" title="Ajouter un nouveau fournisseur" data-toggle="modal" data-target="#modal-createFournisseur">
                 <i class="fa fa-plus"></i>
-              </button>
+            </button>
             <table id="tableFournisseur" class="table table-bordered table-striped">
                 <thead>
                     <tr>

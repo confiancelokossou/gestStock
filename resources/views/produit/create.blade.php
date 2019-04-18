@@ -3,7 +3,8 @@
       <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span></button>
+                    <span aria-hidden="true">&times;</span>
+                </button>
                 <h4 class="modal-title" id="titre">Nouveau produit</h4>
             </div>
             <form id="addProduitForm">
@@ -41,27 +42,26 @@
                                 <div class="form-group" id="nv">
                                         <label for="nvCategorie">Nouvelle catégorie:</label>
                                         <input type="text" class="form-control" name="nvCategorie" >
-                                    </div>
+                                </div>
                                 <div class="form-group" id="selectCategorie">
                                     <label for="categorie">Catégorie:</label>
-                                    <select class="form-control" id="categorie" name="categorie" >
+                                    <select class="form-control select2" style="width: 100%;" id="categorie" name="categorie" >
                                         @foreach($categorie as $cat)
                                             <option value="{{$cat->id}}">{{$cat->libelle}}</option>
                                         @endforeach
                                     </select>
                                 </div>
-                             </div>
-                          </div>
-                        </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Annuler</button>
-                                <button type="submit" class="btn btn-primary">Sauvegarder</button>
                             </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Annuler</button>
+                            <button type="submit" class="btn btn-primary">Sauvegarder</button>
+                        </div>
                      </div>
                 </div>
             </form>
-      </div>
- </div>
+        </div>
+    </div>
 </div>
 
 

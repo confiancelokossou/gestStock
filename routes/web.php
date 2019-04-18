@@ -32,3 +32,4 @@ Route::get('/produit', 'ProduitController@index')->name('produit');
 Route::post('/addProduit', 'ProduitController@addProduit');
 Route::put('/editProduit/{id}', 'ProduitController@editProduit');
 Route::delete('/destroyProduit/{id}', 'ProduitController@destroyProduit');
+Route::get('/entree', 'CommandeController@index')->name('entree');

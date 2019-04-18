@@ -25,6 +25,10 @@ class HomeController extends Controller
     public function index()
     {
         $stMin = DB::select('select * from produits where stockMin >= quantiteDisp');
-        return view('home',compact('stMin'));
+        $seuilAlerte = DB::select('select * from produits where seuilAlerte >= quantiteDisp');
+        $min = DB::select('SELECT COUNT(*) as nb FROM produits WHERE stockMin>= quantiteDisp');
+        $alerte = DB::select('SELECT COUNT(*) as nb FROM produits WHERE seuilAlerte>= quantiteDisp');
+        return view('home',compact('stMin', 'seuilAlerte', 'min', 'alerte'));
+        dd($stMin);
     }
 }

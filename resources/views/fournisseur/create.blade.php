@@ -1,9 +1,10 @@
 <div class="modal fade" tabindex="-1" id="modal-createFournisseur" role="dialog" aria-labelledby="myLargeModalLabel">
-        <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content"  id="formFournisseur">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span></button>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                     <h4 class="modal-title" id="titre">Nouveau fournisseur</h4>
                 </div>
                 <form id="form">
@@ -35,13 +36,12 @@
                                         <label for="telephone">Téléphone:</label>
                                         <input type="text" class="form-control" name="telephone" >
                                     </div>
-                                 </div>
                               </div>
                             </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Annuler</button>
-                                    <button type="submit" class="btn btn-primary">Sauvegarder</button>
-                                </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Annuler</button>
+                                <button type="submit" class="btn btn-primary">Sauvegarder</button>
+                            </div>
                          </div>
                     </div>
                 </form>

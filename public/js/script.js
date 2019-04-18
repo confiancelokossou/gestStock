@@ -28,12 +28,12 @@ $(document).ready(function ()
     });
 
 
-    $('#btnEnregistrerCmd').click(function(){
+    /*$('#btnEnregistrerCmd').click(function(){
         var i;
         for(i=1; i<=nbOcc; i++){
             alert($("#cmderref"+i).val()+" - "+$("#cmderprix"+i).val()+" - "+$("#cmderqte"+i).val()+" - "+$("#MontantCmder"+i).val()+"\n")
         }
-    });
+    })*/
 
 
     $("#addItemVente").click(function(){
@@ -55,18 +55,43 @@ $(document).ready(function ()
         }
 
     });
-/*************************LES DATATABLES******************************* */
+/*************************LES DATATABLES ET SELECT2******************************* */
     $(function (){
-        $('#tableFournisseur').DataTable();
+        $('#tableFournisseur').DataTable({
+            "oLanguage": {
+                "sUrl": "/js/lang_fr.json"
+              }
+        });
     });
 
     $(function () {
-        $('#tableClient').DataTable();
+        $('#tableClient').DataTable({
+            "oLanguage": {
+                "sUrl": "/js/lang_fr.json"
+              }
+        });
     });
 
     $(function(){
-        $('#tableProduit').DataTable();
+        $('#tableProduit').DataTable({
+            "oLanguage": {
+                "sUrl": "/js/lang_fr.json"
+              }
+        });
     });
+
+    $(function(){
+        $('#tablecommande').DataTable({
+            "oLanguage": {
+                "sUrl": "/js/lang_fr.json"
+              }
+        });
+    });
+
+    $(function(){
+        $('.select2').select2();
+    });
+
 
          /*************************** FOURNISSEUR ***************************/
       //Ajout d'un fournisseur
@@ -343,6 +368,28 @@ $(document).ready(function ()
             },
         });
   });
+
+
+    /***********************DETAIL DE LA PAGE D'ACCEUIL ************************************/
+
+$('#detailStockMin').on('click', function(){
+    $('#modal-stockMinimal').modal('show');
+});
+
+
+$('#detailSeuilAlerte').on('click', function(){
+    $('#modal-seuilAlerte').modal('show');
+});
+
+
+/********************************COMMMANDE******************************** */
+$('#commandeForm').on('submit', function(e){
+    e.preventDefault();
+    var data = $('#commandeForm').serialize();
+    console.log(data);
+
+});
+
 
 
 
